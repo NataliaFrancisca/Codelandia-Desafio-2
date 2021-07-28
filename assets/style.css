@@ -24,107 +24,87 @@
 }
 
 *{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 html{
-  font-size: 62.5%;
+    font-size: 62.5%;
+    font-family: 'Montserrat-Medium';
 }
 
 body{
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
-
 
 h1,h2,h3,h4,h5,h6 {
-  margin: 0;
-}
-
-ul,ol{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a{
-  text-decoration: none;
+    margin: 0;
 }
 
 img{
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-button,input {
-  border: 0;
-}
-
-button:focus,
-input:focus {
-  border: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 span{
-  font-size: 18px;
-  font-family: Montserrat-Medium;
-  line-height: 196.19%;
+    font-size: 18px;
+    font-family: Montserrat-Medium;
+    line-height: 196.19%;
 }
 
 header .header-container-details{
-  height: 60px;
-  width: 100%; 
+    height: 60px;
+    width: 100%; 
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Montserrat-Medium';
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header .header-container-details:nth-child(1){
-  background-color: var(--title);
+    background-color: var(--title);
 
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
 }
 
 header .header-container-details:nth-child(2){
-  background-color: var(--bgSite);
+    background-color: var(--bgSite);
 
-  font-size: 24px;
-  font-weight: 600;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 
 header .header-mask-group{
-  width: 100%;
-  height: 377px;
+    width: 100%;
+    height: 377px;
 
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .header-mask-group .mask-group-image{
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  background-image: url("img/wallpaper.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background-image: url("img/wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-  filter: brightness(50%);
+    filter: brightness(50%);
 }
 
 .header-mask-group .mask-group-details{
@@ -137,45 +117,51 @@ header .header-mask-group{
 }
 
 .header-mask-group .mask-group-details h1{
-  width: 400px;
-  font-family: Montserrat-Bold;
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 19px;
+    width: 400px;
+
+    font-family: Montserrat-Bold;
+    font-size: 32px;
+    font-weight: 700;
+
+    margin-bottom: 19px;
 }
 
 main{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main .shoes-details{
-  width: 90%;
-  margin-top: 58px;
-  margin-bottom: 59px;
+    width: 90%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    margin-top: 58px;
+    margin-bottom: 59px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .shoes-details h1{
-  font-size: 32px;
-  font-family: Montserrat-Medium;
-  line-height: 196.19%;
-  font-weight: 600;
+    font-size: 32px;
+    font-family: Montserrat-Medium;
+    line-height: 196.19%;
+    font-weight: 600;
 }
 
 .shoes-images{
-  display: grid;
+    display: grid;
 
-  width: auto;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    grid-gap: 1.3rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 59px;
 }
 
 .shoes-images .card{
@@ -187,10 +173,25 @@ main .shoes-details{
     align-items: center;
     justify-content: center;
     margin-bottom: 3.9rem;
-
 }
 
 .shoes-images img{
-  width: 250px;
-  height: 150px;
+    width: 250px;
+    height: 150px;
+}
+
+footer{
+    height: 60px;
+    background-color: var(--title);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+footer span{
+    color: var(--white);
+    font-weight: 500;
 }
