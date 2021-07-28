@@ -14,7 +14,7 @@ _________
 
 #### Link do projeto que estou desenvolvendo: 
 
-🔗 
+🔗 https://codelandia-jordanshoes-nf.netlify.app/
 
 _________
 
