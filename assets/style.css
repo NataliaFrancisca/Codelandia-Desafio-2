@@ -59,6 +59,7 @@ span{
     font-size: 18px;
     font-family: Montserrat-Medium;
     line-height: 196.19%;
+    text-align: center;
 }
 
 header .header-container-details{
@@ -84,7 +85,6 @@ header .header-container-details:nth-child(2){
     font-size: 24px;
     font-weight: 600;
 }
-
 
 header .header-mask-group{
     width: 100%;
@@ -160,8 +160,6 @@ main .shoes-details{
     width: auto;
     grid-gap: 1.3rem;
     grid-template-columns: repeat(4, 1fr);
-
-    margin-top: 59px;
 }
 
 .shoes-images .card{
@@ -194,4 +192,59 @@ footer{
 footer span{
     color: var(--white);
     font-weight: 500;
+}
+
+@media only screen and (max-width: 700px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    span{
+        font-size: 16px;
+    }
+
+    header .header-mask-group{
+        justify-content: center;
+    }
+
+    .header-mask-group .mask-group-details h1{
+        width: auto;
+    }
+
+    .header-mask-group .mask-group-details{
+        margin-left: 0px;
+        width: 90%;
+        height: auto;
+    }
+
+    .shoes-images{
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+
+    .shoes-images .card{
+        margin: 15px 20px 15px;
+    }
+
+    .shoes-images .card:last-child{
+        margin-bottom: 50px;
+    }
+
+    main .shoes-details{
+        margin-top: 50px;
+    }
+  
+    footer{
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 850px){
+
+    .shoes-images{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
 }
